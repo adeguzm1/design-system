@@ -21,15 +21,15 @@
 .cagov-alert {
   padding-top: $p-md;
   padding-bottom: $p-md;
-  background-color: $primary-dark;
+  background-color: var(--primary-color, #064e66);
   min-height: 50px;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  color: $white !important;
+  color: var(--white, #fff) !important;
 
   h3,
   p {
-    color: $white !important;
+    color: var(--white, #fff) !important;
   }
 
   .container {
@@ -39,7 +39,7 @@
     margin: 0 auto;
 
     .alert-content {
-      border-left: 5px solid $secondary;
+      border-left: 5px solid var(--secondary-color, #cf5d28);
       margin-left: 0;
       padding-left: $p-sm;
       padding-bottom: $base;
@@ -54,6 +54,7 @@
     padding-bottom: 0;
     margin: 0;
   }
+  
   .alert-text {
     margin-top: $p-sm !important;
     font-size: $body-text;
@@ -65,9 +66,9 @@
     display: block;
 
     a {
-      color: $primary-dark !important;
+      color: var(--primary-dark-color, #4A1106) !important;
       padding: 0.725rem !important;
-      background-color: $white;
+      background-color: var(--white, #fff);
       font-size: $body-text;
       font-weight: 700;
       border-radius: 5px !important;
@@ -77,13 +78,13 @@
       top: -0.4rem;
 
       &:hover {
-        color: $primary-dark !important;
+        color: var(--primary-dark-color, #4A1106) !important;
         padding: 0.725rem !important;
-        background-color: $secondary !important;
+        background-color: var(--secondary-color, #cf5d28) !important;
         border-radius: 4px;
       }
       &focus {
-        outline: 2px solid $secondary;
+        outline: 2px solid var(--secondary-color, #cf5d28);
       }
     }
   }
@@ -97,17 +98,17 @@
     margin: 0 !important;
     padding: 0 !important;
     svg path {
-      fill: $white;
+      fill: var(--white, #fff);
     }
     &:hover {
       svg path {
-        fill: $secondary;
+        fill: var(--secondary-color, #cf5d28);
       }
     }
     &:focus {
-      outline: 2px solid $secondary;
+      outline: 2px solid var(--secondary-color, #cf5d28);
       svg path {
-        fill: $secondary;
+        fill: var(--secondary-color, #cf5d28);
       }
     }
   }
